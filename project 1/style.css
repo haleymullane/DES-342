@@ -4,3 +4,8 @@ div {
     padding: 50px;
     margin: 20px;
   }
+  div.ex1 {
+    width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+  }
