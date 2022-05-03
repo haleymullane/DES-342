@@ -1,87 +1,98 @@
 * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    color: white
-  }
-  p {
-    margin-top: 0;
-    margin-bottom: 20px;
-    overflow:scroll;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
- 
-  }
-  main {
-    border: 1px solid red;
-    width: 100vw;
-    margin-top: 30vh;
-  }
-  section {
-    border: 1px solid blue;
-    width: 100%;
-  }
-  article {
-    display: flex;
-  }
-  article div {
-    flex: 1;
-    padding: 60px;
-    width: 80%;
-    margin: auto;
-  }
-  header {
-    height: 30vh;
-    width: 100vw;
-    display: flex;
-    position: fixed;
-    top: 0;
-    border: 1px solid red;
-    background: rgb(90, 90, 90);
-    background: linear-gradient(180deg, rgb(54, 54, 54) 80%, rgba(54, 54, 54, 0.801) 60%);
-  }
-  header div {
-    flex: 1;
-    padding: 60px;
-    padding-top: 0;
-    width: 80%;
-    margin: auto;
-    position: relative;
-  }
-  .right .can {
-    transform-origin: center;
-  }
-  img {
-    width: 100%;
-  }
-  #one,
-  #two,
-  #three,
-  #four {
-    height: 70vh;
-  }
-  #one {
-    background-color: rgb(45, 45, 45);
-  }
-  #two {
-    background-color: rgb(45, 45, 45);
-  }
-  #three {
-    background-color: rgb(45, 45, 45);
-  }
-  #four {
-    background-color: rgb(45, 45, 45);
-  }
-  
-  #news,
-  #water {
-    position: absolute;
-    top: 0;
-    left: 60px;
-    z-index: 9;
-    width: 15vw;
-    cursor: move;
-    z-index: 10;
-  }
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: white;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  overflow: scroll;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+  border: 1px solid red;
+  width: 100vw;
+  margin-top: 30vh;
+}
+section {
+  border: 1px solid blue;
+  width: 100%;
+}
+article {
+  display: flex;
+}
+article div {
+  flex: 1;
+  padding: 60px;
+  width: 80%;
+  margin: auto;
+}
+header {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  top: 0;
+  border: 1px solid red;
+  background: rgb(90, 90, 90);
+  background: linear-gradient(180deg, rgb(54, 54, 54) 80%, rgba(54, 54, 54, 0.801) 60%);
+}
+header div {
+  flex: 1;
+  padding: 60px;
+  padding-top: 0;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.right .can {
+  transform-origin: center;
+}
+img {
+  width: 100%;
+}
+#one,
+#two,
+#three,
+#four {
+  height: 70vh;
+}
+#one {
+  background-color: rgb(45, 45, 45);
+}
+#two {
+  background-color: rgb(45, 45, 45);
+}
+#three {
+  background-color: rgb(45, 45, 45);
+}
+#four {
+  background-color: rgb(45, 45, 45);
+}
 
- 
+#news,
+#water {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  z-index: 9;
+  width: 15vw;
+  cursor: move;
+  z-index: 10;
+}
+
+.rotate {
+  /* animation-name: rotate; */
+  transform: rotate(-20deg);
+  /* animation-duration: 1s; */
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
