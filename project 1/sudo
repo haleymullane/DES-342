@@ -1,0 +1,11 @@
+
+//If the current fire number is equal to 1, return to first page
+//if the current fire number is equal to 2, return to second page
+//if the current fire number is equal to 3, go to third page
+//if the current fire number is greater than 3, show timer message for timeout
+//if the timer finishes, the current fire number should be equal to 2
+
+
+#message change to img src to fit the flame stages
+modal is the popup, look up modal jquery code 
+

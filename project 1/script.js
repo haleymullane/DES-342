@@ -93,8 +93,8 @@ function dragElement(elmnt) {
     document.onmousemove = null
     setTimeout(function () {
       $('#water').removeClass('rotate')
-      $('#water').css('top', '0').css('left', '60px')
-      $('#news').css('top', '0').css('left', '60px')
+      $('#water').css('top', '0').css('left', '105px')
+      $('#news').css('top', '0').css('left', '105px')
     }, 1000)
   }
 }
