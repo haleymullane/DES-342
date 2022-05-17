@@ -6,12 +6,14 @@ body {
   color: rgb(235, 235, 235);
 }
 
+
 p {
   margin-top: 60;
   margin-bottom: 20px;
   overflow: scroll;
   font-size: 40pt;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Truculenta', sans-serif;
+  padding-top: 650px;
 }
 main {
   border: 1px solid red;
@@ -28,8 +30,9 @@ article {
 }
 article div {
   flex: 1;
+  padding-top: 200px;
   padding: 60px;
-  width: 80%;
+  width: 65%;
   margin: auto;
 }
 header {
@@ -39,7 +42,7 @@ header {
   position: fixed;
   top: 0;
   border: 1px solid red;
-  background: rgba(90, 90, 90, 0.726);
+  background: rgb(45, 45, 45);
  
 }
 header div {
@@ -79,6 +82,7 @@ img {
 #news,
 #water,
 #fire {
+    
   position: absolute;
   top: 0;
   left: 105px;
