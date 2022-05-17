@@ -1,11 +1,12 @@
+If curFireNum = 1, return to page 1
+If curFireNum = 2, return to page 2
+If curFireNum = 3, return to page 3
+If curFireNum > 3, display modal with timer
+After timer, make curFireNum = 2, return to page 2
 
-//If the current fire number is equal to 1, return to first page
-//if the current fire number is equal to 2, return to second page
-//if the current fire number is equal to 3, go to third page
-//if the current fire number is greater than 3, show timer message for timeout
-//if the timer finishes, the current fire number should be equal to 2
+If curFireNum = 1, display fire 1
+If curFireNum = 2, display fire 2
+If curFireNum => 3, display fire 3
 
-
-#message change to img src to fit the flame stages
-modal is the popup, look up modal jquery code 
-
+On clickDragRelease of water, decrement curFireNum -1
+On clickDragRelease of Newspaper, increase curFireNum +1
