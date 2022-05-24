@@ -10,10 +10,8 @@ body {
 p {
   margin-top: 60;
   margin-bottom: 20px;
-  overflow: scroll;
-  font-size: 40pt;
+  font-size: 16pt;
   font-family: 'Truculenta', sans-serif;
-  padding-top: 650px;
 }
 main {
   border: 1px solid red;
@@ -49,7 +47,7 @@ header div {
   flex: 1;
   padding: 60px;
   padding-top: 0;
-  width: 80%;
+  width: 100%;
   margin: auto;
   position: relative;
 }
