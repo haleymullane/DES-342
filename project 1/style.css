@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -8,11 +9,13 @@ body {
 
 
 p {
-  margin-top: 60;
+  margin-top: 40;
   margin-bottom: 20px;
   font-size: 16pt;
   font-family: 'Truculenta', sans-serif;
 }
+
+
 main {
   border: 1px solid red;
   width: 100vw;
@@ -28,7 +31,7 @@ article {
 }
 article div {
   flex: 1;
-  padding-top: 200px;
+  padding-top: 20px;
   padding: 60px;
   width: 65%;
   margin: auto;
@@ -61,7 +64,7 @@ img {
 #two,
 #three,
 #four {
-  height: 80vh;
+  height: 100vh;
 }
 #one {
   background-color: rgb(45, 45, 45);
@@ -69,6 +72,7 @@ img {
 }
 #two {
   background-color: rgb(45, 45, 45);
+
 }
 #three {
   background-color: rgb(45, 45, 45);
@@ -77,9 +81,24 @@ img {
   background-color: rgb(45, 45, 45);
 }
 
+#flame1 {
+  position: absolute;
+  width: 15vw
+}
+
+#flame2 {
+  position: absolute;
+  width: 15vw
+}
+
+#flame3 {
+  position: absolute;
+  width: 15vw
+}
+
 #news,
-#water,
-#fire {
+#water
+ {
     
   position: absolute;
   top: 0;

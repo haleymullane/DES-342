@@ -9,15 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&family=Josefin+Sans:wght@300&family=Truculenta:opsz@12..72&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header>
         <p>Emotional Regulation</p>
+        <input type="image" src="images/news.png" height="120" width="140"/> 
+
       <div class="left"><img src="images/news.png" id="news" alt="stressers" /></div>
-      <div class="center">
-        <img src="images/flames/fire-one.png" <img src="images/flames/fire-two.png" <img src="images/flames/fire-three.png"id="fire" alt="emotions" />
-      </div>
+      
       <div class="right"><img class="water" id="water" src="images/water.png" /></div>
+      <input type="image" src="images/water.png" height="120" width="140"/> 
+
+
     </header>
     <main>
         
@@ -25,10 +29,12 @@
         
       <section id="one">
         <article>
+        </div>
           <div>
             <p>NEWSPAPER: <br />This newspaper stands in as an example of something that can ignite a flame. The first addition of a "stresser" is called Arousal; when a need is realized, such as hunger, rest, water, exercise, attention, etc.</p>
           </div>
-          <div>
+          <div class="firetext1">
+              <img src="images/flames/fire-one.png" id="flame1"/>
             <p>FIRE: <br />This phase of fire is in a relaxed state. All previous needs have been met, and the individual feels calm in their current state of being.</p>
           </div>
           <div>
@@ -47,7 +53,8 @@
               Adding this newpaper, or not meeting the needs of the individual may bring this flame to the final stage. Their level of tolerance has lowered, meaning not meeting a need or encouraging redirection can cause them unable to regulate their "flame".
             </p>
           </div>
-          <div>
+          <div class="firetext2">
+            <img src="images/flames/fire-two.png" id="flame2"/> 
             <p>
               FIRE <br />
               This flame is in the "Arousal" state, has unmet needs, and the individual has grown more irritable. This can show itself as having some dismissive answers to questions, difficulty focusing, or lack of interest in their current activity.
@@ -63,14 +70,14 @@
       </section>
       <section id="three">
         <article>
-            
           <div>
             <p>
               NEWS <br />
               Adding this newspaper will only further add to the flame, and exacerbate the issue, and leave the flame as is. apply the newspaper to the fire.
             </p>
           </div>
-          <div>
+          <div class="firetext3">
+              <img src="images/flames/fire-three.png" id="flame3"/>
             <p>
               FIRE <br />
               The flame is at its full potential, and the individual has shut down. This can show itself by the person leaving the situation aggresively, yelling, or physical outbursts. The individual is no longer psychologically able to comprehend what the root of their problem or need is, and is unable to process logic under this distress.
@@ -88,47 +95,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     
-    <script>
-        let curFireNum = 1
-    
-        $('#news').click(function () {
-          curFireNum++
-          incrementFire(curFireNum)
-        })
-        $('#water').click(function () {
-          curFireNum--
-          decrementFire(curFireNum)
-        })
-    
-        function incrementFire(curFireNum) {
-          if (curFireNum <= 3) {
-            $('#fire').attr('src', 'images/flames/fire-three.png')
-          } else if (curFireNum = 2) {
-            $('#fire').attr('src', 'images/flames/fire-two.png')
-        } 
-        else if (curFireNum >= 4) {
-            $('#fire').attr('src', 'images/flames/fire-three.png')
-            alert('time out!') //this is a modal
-            curFireNum = 3
-          }
-    
-          return updateFireNum(curFireNum)
-        }
-    
-        function decrementFire(curFireNum) {
-          if (curFireNum > 1) {
-            $('#fire').attr('src', 'images/flames/fire-two.png')
-          } else if (curFireNum <= 1) {
-            curFireNum = 1
-            $('#fire').attr('src', 'images/flames/fire-one.png')
-          }
-          return updateFireNum(curFireNum)
-        }
-    
-        function updateFireNum(curFireNum) {
-          $('#firenum').html(curFireNum)
-        }
-      </script>
 
   </body>
 </html>
