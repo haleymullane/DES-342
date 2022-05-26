@@ -99,6 +99,48 @@ function dragElement(elmnt) {
   }
 }
 
+// Counter code
+let curFireNum = 1
 
+$('#news-link').click(function () {
+  curFireNum++
+  incrementFire(curFireNum)
+})
+$('#water-link').click(function () {
+  curFireNum--
+  decrementFire(curFireNum)
+})
 
-       
+function incrementFire(curFireNum) {
+  if (curFireNum == 1) {
+    $('#news-link').attr('href', '#one')
+  } else if (curFireNum == 2) {
+    $('#news-link').attr('href', '#two')
+  } else if (curFireNum == 3) {
+    console.log(curFireNum)
+    $('#news-link').attr('href', '#three')
+  } else if (curFireNum >= 4) {
+    alert('whoa')
+    curFireNum = 3
+  }
+
+  return updateFireNum(curFireNum)
+}
+
+function decrementFire(curFireNum) {
+  if (curFireNum == 1) {
+    $('#water-link').attr('href', '#one')
+  } else if (curFireNum == 2) {
+    $('#water-link').attr('href', '#two')
+  } else if (curFireNum == 3) {
+    $('#water-link').attr('href', '#three')
+  } else if (curFireNum <= 1) {
+    alert('coooooooold')
+    curFireNum = 1
+  }
+  return updateFireNum(curFireNum)
+}
+
+function updateFireNum(curFireNum) {
+  $('#firenum').html(curFireNum)
+}
