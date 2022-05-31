@@ -11,7 +11,7 @@ body {
 }
 
 p {
-  margin-top: 40;
+  margin-top: 30;
   margin-bottom: 20px;
   font-size: 16pt;
   font-family: 'Truculenta', sans-serif;
@@ -20,8 +20,8 @@ p {
 main {
   border: 1px solid red;
   width: 100vw;
-  margin-top: 20vh;
-  height: 75vh;
+  margin-top: 10vh;
+  height: 90vh;
 }
 section {
   border: 1px solid blue;
@@ -41,7 +41,7 @@ article div {
   margin: auto;
 }
 header {
-  height: 25vh;
+  height: 20vh;
   width: 100vw;
   display: flex;
   position: fixed;
@@ -59,7 +59,7 @@ header div {
   position: relative;
 }
 section {
-  padding-top: 25vh;
+  padding-top: 20vh;
   position: relative;
 }
 .right .can {
@@ -101,7 +101,7 @@ img {
   top: 0;
   left: 105px;
   z-index: 9;
-  width: 16vw;
+  width: 12vw;
   cursor: move;
   z-index: 10;
 }
