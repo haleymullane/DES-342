@@ -93,7 +93,7 @@ function dragElement(elmnt) {
     document.onmousemove = null
     setTimeout(function () {
       $('#water').removeClass('rotate')
-      $('#water').css('top', '0').css('left', '105px')
+      $('#water').css('top', '0').css('right', '105px')
       $('#news').css('top', '0').css('left', '105px')
     }, 1000)
   }
@@ -120,7 +120,7 @@ function incrementFire(curFireNum) {
     console.log(curFireNum)
     $('#news-link').attr('href', '#three')
   } else if (curFireNum >= 4) {
-    alert('whoa')
+    alert('This fire is explosive! Let the individual take a break and moment to themselves instead of trying to resolve the situation in the moment.')
     curFireNum = 3
   }
 
@@ -135,7 +135,7 @@ function decrementFire(curFireNum) {
   } else if (curFireNum == 3) {
     $('#water-link').attr('href', '#three')
   } else if (curFireNum <= 1) {
-    alert('coooooooold')
+    alert('This fire is relaxed! All of the needs have been met and this individual is ready to move forward.')
     curFireNum = 1
   }
   return updateFireNum(curFireNum)
